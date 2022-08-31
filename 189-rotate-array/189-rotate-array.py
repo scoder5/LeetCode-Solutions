@@ -3,9 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        n = len(nums)
-        temp = [0] * n
-        for i in range(len(nums)):
-            temp[(i + k) % n] = nums[i]
-        for i in range(len(nums)):
-            nums[i] = temp[i]
+        k = k % len(nums)
+        def rot(l, r):
+            while l < r:
+                nums[l], nums[r] = nums[r], nums[l]
+                l, r = l+1, r-1
+                
+        rot(0, len(nums)-1)
+        rot(0, k-1)
+        rot(k, len(nums)-1)
+        return nums
