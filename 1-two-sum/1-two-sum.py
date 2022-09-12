@@ -1,11 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        preMap = {}
-        
+        hmap = {}
         for i, n in enumerate(nums):
-            diff = target - n
-            if diff in preMap:
-                return [preMap[diff], i]
-            preMap[n] = i
-            
+            dif = target - n
+            if dif in hmap:
+                return [hmap[dif], i]
+            hmap[n] = i
         return
