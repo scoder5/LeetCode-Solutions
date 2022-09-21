@@ -1,2 +1,2 @@
-#Problems And Solutions Of LeetCode
+#A collection of Problems And Solutions Of LeetCode
 #Python
