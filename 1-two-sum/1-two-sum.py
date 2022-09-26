@@ -1,9 +1,8 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hmap = {}
+        pmap = {}
         for i, n in enumerate(nums):
-            dif = target - n
-            if dif in hmap:
-                return [hmap[dif], i]
-            hmap[n] = i
-        return
+            d = target - n
+            if d in pmap:
+                return [pmap[d], i]
+            pmap[n] = i
