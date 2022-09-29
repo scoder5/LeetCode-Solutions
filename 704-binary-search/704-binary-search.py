@@ -13,4 +13,3 @@ class Solution:
                 beg = mid + 1
             
         return pos
-        
