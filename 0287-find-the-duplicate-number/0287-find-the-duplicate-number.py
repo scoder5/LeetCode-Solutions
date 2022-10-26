@@ -1,6 +1,5 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        #Floyd's Algorithm
         slow, fast = 0, 0
         while True:
             slow = nums[slow]
