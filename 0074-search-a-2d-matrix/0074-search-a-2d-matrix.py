@@ -10,7 +10,7 @@ class Solution:
                 bot = row - 1
             else:
                 break
-                
+
         if not (top <= bot):
             return False
         row = (top + bot) // 2
