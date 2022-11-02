@@ -1,9 +1,9 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        #Boyer-Moore Algorithm
+        #Boyer-Moore's Algorithm
         res, count = 0, 0
-        for n in nums:
+        for i in nums:
             if count == 0:
-                res = n
-            count += (1 if n == res else - 1)
+                res = i
+            count += (1 if res == i else -1)
         return res
