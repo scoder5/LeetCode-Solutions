@@ -13,7 +13,7 @@ class Solution:
                 n -= 1
             last -= 1
         
-        while n > 0:    
+        while n > 0:
             nums1[last] = nums2[n-1]
             n -= 1
             last -= 1
